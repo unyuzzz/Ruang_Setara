@@ -34,6 +34,12 @@
             <span>Formulir Pengaduan</span>
         </a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('formulir.index') }}">
+            <i class="fas fa-fw fa-file-alt"></i>
+            <span>Data Pengaduan</span>
+        </a>
+    </li>
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">

@@ -8,6 +8,6 @@ Route::get('/', function () {
 })->name('dashboard');
 
 Route::resource('formulir', FormulirController::class); // Pastikan ini menggunakan huruf kapital
-Route::get('/formulir/create', [FormulirController::class, 'create'])->name('formulir.create');
-Route::get('/formulir/{id}/edit', [FormulirController::class, 'edit'])->name('formulir.edit');
+Route::get('/formulir/create', FormulirController::class, 'create')->name('formulir.create');
+Route::get('/formulir/{id}/edit', FormulirController::class, 'edit')->name('formulir.edit');
      

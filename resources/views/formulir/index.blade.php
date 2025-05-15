@@ -38,7 +38,7 @@
                 <td>{{ \Carbon\Carbon::parse($item->tanggal_kejadian)->format('d M Y') }}</td>
                 <td>{{ is_array($item->jenis) ? implode(', ', $item->jenis) : $item->jenis }}</td>
                 <td>
-                    <a href="{{ url('formulir/.'.$item->id.'/edit') }}" class="btn btn-sm btn-warning">Edit</a>
+                    <a href="{{ route('formulir.edit'.$item->id) }}" class="btn btn-warning btn-sm">Edit</a>
                     <form onsubmit="return confirm('Yakin ingin menghapus laporan ini?')" action="{{ url('formulir/'.$item->id) }}" method="POST" class="d-inline">
                         @csrf
                         @method('DELETE')

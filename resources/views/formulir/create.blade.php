@@ -67,7 +67,7 @@
 
         <div class="mb-3 row">
             <div class="offset-sm-2 col-sm-10">
-                <button type="submit" class="btn btn-primary">KIRIM</button>
+                <button type="submit" class="btn btn-primary" onclick="this.disbled=true; this.form.submit();">KIRIM</button>
                 <a href="{{ route('formulir.index') }}" class="btn btn-secondary">LIHAT DATA</a>
             </div>
         </div>
